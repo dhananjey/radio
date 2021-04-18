@@ -1,0 +1,57 @@
+.app {
+  margin-top: 50px;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading div:first-child {
+  margin-bottom: 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.users {
+  display: none;
+}
+
+.radio {
+  display: grid;
+  grid-template-columns: 100px auto;
+  column-gap: 50px;
+}
+
+.status {
+  margin-top: 20px;
+}
+
+.info ul {
+  padding-left: 15px;  
+}
+
+.info li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.users {
+  padding: 20px;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    display: grid;
+    grid-template-columns: auto 250px;
+  }
+
+  .users {
+    display: block;
+  }
+}

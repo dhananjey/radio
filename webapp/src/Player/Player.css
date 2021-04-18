@@ -1,0 +1,44 @@
+.player {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: none;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+
+.audio {
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+}
+
+.audio audio {
+  display: none;
+}
+
+.audio .muteButton {
+  margin: 0;
+}
+
+.audio .slider {
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .player {
+    grid-template-columns: 130px 1fr;
+    padding: 20px 50px;
+  }
+
+  .logo {
+    display: block;
+  } 
+}
