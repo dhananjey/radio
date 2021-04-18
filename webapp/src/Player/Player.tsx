@@ -105,7 +105,7 @@ export const Player = ({ song }: PlayerProps) => {
 
             <Slider className='slider' value={volumen} onChange={onVolumeChange} />
 
-            {/* <audio ref={audioRef} src={`http://${config[process.env].mpd}`}></audio> */}
+            <audio ref={audioRef} src={`http://${config[process.env].mpd}`}></audio>
           </div>
         </React.Fragment>
       }
